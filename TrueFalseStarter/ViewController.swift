@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         questionField.textColor = UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0)
         questionField.text = questionDictionary.question
         btnInteraction(isEnabled: true, isHidden: false)
-        // Check if question is a 4 choices or a 2 choices for the answer
+        // Check if question is 4 choices or 2 choices for the answer
         if questionDictionary.choices.count == 4 {
             btnChoice1.setTitle(questionDictionary.choices[0], for: .normal)
             btnChoice2.setTitle(questionDictionary.choices[1], for: .normal)
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
             btnChoice4.setTitle(questionDictionary.choices[3], for: .normal)
             nextQuestionButton.isHidden = true
             playAgainButton.isHidden = true
-        // If 2 choice, hide the other 2 buttons
+        // If 2 choices, hide the other 2 buttons
         } else if questionDictionary.choices.count == 2 {
             btnChoice1.setTitle(questionDictionary.choices[0], for: .normal)
             btnChoice2.setTitle(questionDictionary.choices[1], for: .normal)
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
         btnInteraction(isEnabled: false, isHidden: true)
         // Display play again button
         playAgainButton.isHidden = false
-        // Display score with custom message
+        // Display score with custom message, change font weight/colors back to default
         questionField.font = UIFont(name: "HelveticaNeue", size: 14.0)
         questionField.textColor = UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0)
         questionField.text = "Way to go!\nYou got \(correctQuestions) out of \(questionsPerRound) correct!"
