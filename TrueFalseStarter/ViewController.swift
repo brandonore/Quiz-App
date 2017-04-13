@@ -150,7 +150,7 @@ class ViewController: UIViewController {
         } else {
             questionField.font = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             questionField.textColor = UIColor(red: 255/255.0, green: 187/255.0, blue: 93/255.0, alpha: 1.0)
-            questionField.text = "Sorry, that's incorrect!"// Include to show the correct answer: // The correct answer is \(quizQuestionsNew[indexOfSelectedQuestion].choices[correctAnswer]).
+            questionField.text = "Sorry, that's incorrect!"// Include to show the correct answer: "The correct answer is \(quizQuestionsNew[indexOfSelectedQuestion].choices[correctAnswer])."
             // Disable choice buttons
             if selectedQuestionDict.choices.count == 2 {
                 btnChoice1.isEnabled = false
