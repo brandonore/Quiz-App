@@ -28,7 +28,7 @@ var quizQuestions: [QuestionStruct] = [
     QuestionStruct(question: "In Doom II, on Ultra Violence mode, which monster makes the least amount of appearances?", choices: ["Commander Keen", "Spider Mastermind", "The Icon of Sin", "Cyberdemon"], answer: 2),
     QuestionStruct(question: "Who was the famous pop idol in Persona 4?", choices: ["Rise Kujikawa", "Yukiko Amagi", "Chie Satonaka", "Naoto Shriogane"], answer: 0),
     QuestionStruct(question: "Do you ever see Gordan Freeman's face in the Half-Life series?", choices: ["Yes", "No"], answer: 1),
-    QuestionStruct(question: "In Mass Effect 2, you can punch a reporter", choices: ["Yes", "No"], answer: 0)
+    QuestionStruct(question: "In Mass Effect 2, you can punch a reporter.", choices: ["True", "False"], answer: 0)
     
 ]
 
